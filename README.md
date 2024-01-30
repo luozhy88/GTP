@@ -7,3 +7,5 @@ https://github.com/jmorganca/ollama/blob/main/docs/linux.md
 https://ollama.ai/library  
 
 ollama run mixtral
+## perplexity
+https://labs.perplexity.ai/
