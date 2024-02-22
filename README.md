@@ -11,3 +11,6 @@ ollama run mixtral
 https://labs.perplexity.ai/
 ## search.sciphi.ai
 https://search.sciphi.ai/
+
+## AI
+https://www.toolify.ai/zh
