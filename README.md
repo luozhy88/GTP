@@ -17,3 +17,6 @@ https://www.toolify.ai/zh
 
 ## ChatGPTNextWeb
 https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web/tree/main
+
+
+https://igdux.com/ai3
