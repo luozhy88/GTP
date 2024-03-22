@@ -18,5 +18,8 @@ https://www.toolify.ai/zh
 ## ChatGPTNextWeb
 https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web/tree/main
 
+https://github.com/binary-husky/gpt_academic/
 
 https://igdux.com/ai3
+
+
