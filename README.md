@@ -27,4 +27,16 @@ https://igdux.com/ai3
 https://kapkey.chatgptapi.org.cn/
 
 
+# 本地加载大模型
+https://mp.weixin.qq.com/s/ONHcYiF3FyqiIBcWN0QrNA
+docker run --network=host -it  -p 3000:8080 --add-host=host.docker.internal:host-gateway  -v open-webui:/app/backend/data --name open-webui  ghcr.io/open-webui/open-webui:main 
+
+##--restart always 
+##--add-host=host.docker.internal:host-gateway
+## -e OLLAMA_API_BASE_URL=http://192.168.30.202:11434 
+
+页面：IP:8080
+软件管理页面设置：
+Connections:  http://localhost:11434
+
 
