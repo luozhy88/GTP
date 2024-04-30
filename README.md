@@ -37,7 +37,6 @@ docker run --network=host -it  -p 3000:8080 --add-host=host.docker.internal:host
 ##-e OLLAMA_API_BASE_URL=http://192.168.30.202:11434   
 
 页面：IP:8080  
-软件管理页面设置：  
-Connections:  http://localhost:11434  
+软件管理页面设置：  Connections:  http://localhost:11434    
 
 
