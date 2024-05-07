@@ -3,6 +3,11 @@
 ## Ollama
 ### install
 https://github.com/jmorganca/ollama/blob/main/docs/linux.md
+sudo nano /etc/systemd/system/ollama.service  
+CPUQuota=3000%  
+sudo systemctl daemon-reload  
+sudo systemctl restart ollama  
+
 ### models
 https://ollama.ai/library  
 
