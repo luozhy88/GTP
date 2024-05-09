@@ -33,9 +33,11 @@ https://kapkey.chatgptapi.org.cn/
 
 
 # 本地加载大模型
-https://mp.weixin.qq.com/s/ONHcYiF3FyqiIBcWN0QrNA  
-https://docs.openwebui.com/getting-started/troubleshooting/  
+https://mp.weixin.qq.com/s/ONHcYiF3FyqiIBcWN0QrNA    
+https://docs.openwebui.com/getting-started/troubleshooting/    
 docker run --network=host -it  -p 3000:8080 --add-host=host.docker.internal:host-gateway  -v open-webui:/app/backend/data --name open-webui  ghcr.io/open-webui/open-webui:main   
+docker run -d --ulimit nproc=30  -p 3000:8080 --add-host=host.docker.internal:host-gateway  -v open-webui:/app/backend/data --name open-webui  ghcr.io/open-webui/open-webui:ollama  
+
 
 ##--restart always   
 ##--add-host=host.docker.internal:host-gateway  
