@@ -14,6 +14,8 @@ https://ollama.ai/library
 ollama run mixtral
 ## perplexity
 https://labs.perplexity.ai/
+## claude 
+https://claude.ai/
 ## search.sciphi.ai
 https://search.sciphi.ai/
 
