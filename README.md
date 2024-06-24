@@ -49,3 +49,18 @@ docker run -d --ulimit nproc=30  -p 3000:8080 --add-host=host.docker.internal:ho
 软件管理页面设置：  Connections:  http://localhost:11434    
 
 
+# ollamar 在R中掉用
+library(ollamar)
+test_connection()  # test connection to Ollama server; returns a httr2 response object
+# Ollama local server running
+# <httr2_response>
+
+list_models()  # list available models (models you've pulled/downloaded)
+pull("qwen")  # pull/download llama3 model
+resp <- generate("qwen:1.8b", "你是谁")  # return httr2 response object by default
+resp
+pp=generate("qwen:1.8b", "你是谁", output = "text")
+
+
+
+
