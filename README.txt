@@ -61,6 +61,8 @@ resp <- generate("qwen:1.8b", "你是谁")  # return httr2 response object by de
 resp
 pp=generate("qwen:1.8b", "你是谁", output = "text")
 
-
+# 镜像中调GPU方式
+https://www.jianshu.com/p/0d10b821d5c1
+nvtop
 
 
