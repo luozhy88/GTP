@@ -1,6 +1,6 @@
 
 
-
+# https://hf-mirror.com/QuantFactory/Meta-Llama-3-8B-Instruct-GGUF/tree/main
 wget -nc https://hf-mirror.com/QuantFactory/Meta-Llama-3-8B-Instruct-GGUF/resolve/main/Meta-Llama-3-8B-Instruct.Q2_K.gguf
 wget -nc https://hf-mirror.com/QuantFactory/Meta-Llama-3-8B-Instruct-GGUF/resolve/main/USE_POLICY.md
 wget -nc https://hf-mirror.com/QuantFactory/Meta-Llama-3-8B-Instruct-GGUF/resolve/main/README.md
