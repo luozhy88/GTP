@@ -70,6 +70,10 @@ https://ollama.com/install.sh
 #################################### 大模型微调#######################################
 # 大模型下载
 git clone https://opencsg.com/models/shareAI/llama3-Chinese-chat-8b.git --depth 1
+git clone https://opencsg.com/models/AIWizards/Llama3-8B-Chinese-Chat.git
+git clone https://www.modelscope.cn/qwen/Qwen2-7B-Instruct.git
+git clone https://www.modelscope.cn/qwen/Qwen2-1.5B.git
+
 sudo apt install git-lfs
 git lfs pull
 
