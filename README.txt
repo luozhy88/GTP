@@ -66,3 +66,45 @@ https://www.jianshu.com/p/0d10b821d5c1
 nvtop
 https://ollama.com/install.sh
 
+
+#################################### 大模型微调#######################################
+# 大模型下载
+git clone https://opencsg.com/models/shareAI/llama3-Chinese-chat-8b.git --depth 1
+sudo apt install git-lfs
+git lfs pull
+
+# 大模型训练
+llamafactory-cli train examples/train_lora/llama3_lora_pretrain.yaml
+llamafactory-cli chat examples/inference/llama3_lora_sft.yaml
+llamafactory-cli export examples/merge_lora/llama3_lora_sft.yaml
+
+# 安装模型转换工具
+git clone https://github.com/ggerganov/llama.cpp.git
+cd llama.cpp
+make
+pip install -r requirements.txt
+
+/home/zhiyu/miniconda3/bin/python /mnt/zhiyu/data/software/llama.cpp-master/convert_hf_to_gguf.py /mnt/zhiyu/data/software/LLaMA-Factory/models/llama3_lora_sft --outfile /mnt/zhiyu/data/software/LLaMA-Factory/models/gguf
+
+# 生成可用的模型
+##Modelfile
+# FROM /mnt/zhiyu/data/software/LLaMA-Factory/models/gguf/llama3-Chinese-8B-chat-F16.gguf
+# PARAMETER temperature 0.7
+# PARAMETER top_p 0.95
+# SYSTEM You are a helpful AI assistant.
+
+ollama create llama3_ceshi -f /mnt/zhiyu/data/software/LLaMA-Factory/models/gguf/Modelfile
+
+
+
+
+
+https://huggingface.co/Rookie/Llama-3-8B-Instruct-Chinese
+https://wisemodel.cn/models/shareAI/llama3-Chinese-chat-8b
+https://opencsg.com/models/shareAI/llama3-Chinese-chat-8b #ok
+https://ai.gitee.com/hf-models/meta-llama/Meta-Llama-3-8B-Instruct/tree/main
+https://modelscope.cn/models/LLM-Research/Meta-Llama-3-8B-Instruct/files
+https://github.com/Rookie1019/Llama-3-8B-Instruct-Chinese
+#################################### 大模型微调#######################################
+
+
