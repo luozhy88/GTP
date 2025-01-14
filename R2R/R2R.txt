@@ -14,3 +14,8 @@ pip install -i https://pypi.tuna.tsinghua.edu.cn/simple google-api-python-client
 pip install r2r -i https://pypi.tuna.tsinghua.edu.cn/simple
 r2r serve --docker --config-name=local_llm
 r2r serve --docker --config-path=/home/zhiyu/R2R/full_local_llm.toml  --b
+
+full_local_llm.toml:
+[embedding]
+provider = "ollama"
+base_model = "deepseek-coder-v2:latest"
