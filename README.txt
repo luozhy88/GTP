@@ -112,3 +112,11 @@ https://github.com/Rookie1019/Llama-3-8B-Instruct-Chinese
 #################################### 大模型微调#######################################
 
 
+# 测试另外服务器是否能调用deepseek-coder
+curl -X POST http://192.168.30.214:11434/api/generate -d '{
+  "model": "deepseek-coder-v2:latest",
+  "prompt":"Why is the sky blue?"
+ }'
+
+
+
