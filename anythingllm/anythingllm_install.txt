@@ -1,3 +1,4 @@
 
 # anythingllm 镜像的方式启动
  docker run -it -p 3002:3001 --network=bridge  -u root --name anythingllmtest  --cap-add SYS_ADMIN  mintplexlabs/anythingllm:latest bash 
+https://github.com/Mintplex-Labs/anything-llm/blob/master/docker/HOW_TO_USE_DOCKER.md
