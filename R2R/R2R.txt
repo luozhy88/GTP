@@ -1,3 +1,5 @@
+
+############################方法1
 export OLLAMA_API_BASE=http://192.168.30.214:11434
 pip install r2r -i https://pypi.tuna.tsinghua.edu.cn/simple
 pip install litellm  --index-url https://pypi.tuna.tsinghua.edu.cn/simple #指定镜像源安装
@@ -19,3 +21,17 @@ full_local_llm.toml:
 [embedding]
 provider = "ollama"
 base_model = "deepseek-coder-v2:latest"
+
+
+############################方法2
+pip install 'r2r[core,ingestion-bundle]'  -i https://pypi.tuna.tsinghua.edu.cn/simple
+r2r serve  --config-path=/home/zhiyu/data/software/R2R/full_local_llm.toml
+docker run --name mypostgres -e POSTGRES_USER=myuser -e POSTGRES_PASSWORD=mypassword -e POSTGRES_DB=mydatabase -p 5432:5432 -d postgres
+export R2R_POSTGRES_USER=myuser
+export R2R_POSTGRES_PASSWORD=mypassword
+export R2R_POSTGRES_HOST=localhost
+export R2R_POSTGRES_PORT=5432
+export R2R_POSTGRES_DBNAME=mydatabase
+export R2R_PROJECT_NAME=my_project # 根据需要自定义项目名称
+
+r2r serve --config-name=local_llm
