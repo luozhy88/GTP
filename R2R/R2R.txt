@@ -1,0 +1,16 @@
+export OLLAMA_API_BASE=http://192.168.30.214:11434
+pip install r2r -i https://pypi.tuna.tsinghua.edu.cn/simple
+pip install litellm  --index-url https://pypi.tuna.tsinghua.edu.cn/simple #指定镜像源安装
+pip install asyncpg numpy supabase bcrypt jwt nacl --index-url https://pypi.tuna.tsinghua.edu.cn/simple #指定镜像源安装
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple  asyncpg
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple  numpy
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple  supabase
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple  bcrypt
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple  jwt
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple  pynacl
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple pynacl sendgrid ollama pdf2image bs4 unstructured_client psutil google
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple google-api-python-client hatchet_sdk
+
+pip install r2r -i https://pypi.tuna.tsinghua.edu.cn/simple
+r2r serve --docker --config-name=local_llm
+r2r serve --docker --config-path=/home/zhiyu/R2R/full_local_llm.toml  --b
