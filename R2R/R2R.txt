@@ -35,3 +35,25 @@ export R2R_POSTGRES_DBNAME=mydatabase
 export R2R_PROJECT_NAME=my_project # 根据需要自定义项目名称
 
 r2r serve --config-name=local_llm
+
+############################方法3
+# docker 安装
+pip install r2r
+r2r serve --docker --config-name=local_llm
+r2r serve --config-path=/home/zhiyu/software/R2R/full_local_llm.toml
+
+# 测试是否成功
+curl http://localhost:7272/v3/health
+# {"results":{"response":"ok"}}
+
+# 读取数据
+r2r set-api-base http://localhost:7272 # or `export R2R_API_BASE=http://localhost:7272`
+r2r documents create --file-paths R2R/py/core/examples/data/aristotle.txt
+
+# 查看所有读取列表
+r2r documents list
+
+curl http://192.168.30.214:11434/api/embeddings -d '{ "model": "deepseek-coder-v2:latest", "prompt": "What is Aristotle?" }' -H "Content-Type: application/json"
+
+curl http://192.168.30.214:11434/api/embeddings -d '{ "model": "mxbai-embed-large", "prompt": "What is Aristotle?" }' -H "Content-Type: application/json"
+
