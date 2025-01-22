@@ -41,6 +41,8 @@ r2r serve --config-name=local_llm
 pip install r2r
 r2r serve --docker --config-name=local_llm
 r2r serve --config-path=/home/zhiyu/software/R2R/full_local_llm.toml
+r2r serve --docker --config-path=R2R/py/core/configs/local_llm.toml
+
 
 # 测试是否成功
 curl http://localhost:7272/v3/health
