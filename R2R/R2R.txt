@@ -54,6 +54,8 @@ r2r documents create --file-paths R2R/py/core/examples/data/aristotle.txt
 r2r documents list
 
 curl http://192.168.30.214:11434/api/embeddings -d '{ "model": "deepseek-coder-v2:latest", "prompt": "What is Aristotle?" }' -H "Content-Type: application/json"
-
 curl http://192.168.30.214:11434/api/embeddings -d '{ "model": "mxbai-embed-large", "prompt": "What is Aristotle?" }' -H "Content-Type: application/json"
+
+curl http://localhost:11434/api/embeddings -d '{ "model": "deepseek-coder-v2:latest", "prompt": "What is Aristotle?" }' -H "Content-Type: application/json"
+curl http://localhost:11434/api/embeddings -d '{ "model": "mxbai-embed-large", "prompt": "What is Aristotle?" }' -H "Content-Type: application/json"
 
