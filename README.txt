@@ -123,6 +123,20 @@ A Retrieval-Augmented Generation (RAG) system for PDF document analysis using De
 https://gist.github.com/lisakim0/0204d7504d17cefceaf2d37261c1b7d5
 
 
+pip install -U langchain langchain-community --index-url https://pypi.tuna.tsinghua.edu.cn/simple 
+pip install streamlit  --index-url https://pypi.tuna.tsinghua.edu.cn/simple #指定镜像源安装
+pip install pdfplumber  --index-url https://pypi.tuna.tsinghua.edu.cn/simple
+pip install semantic-chunkers  --index-url https://pypi.tuna.tsinghua.edu.cn/simple
+pip install open-text-embeddings  --index-url https://pypi.tuna.tsinghua.edu.cn/simple
+conda install faiss 
+
+pip install prompt-template  --index-url https://pypi.tuna.tsinghua.edu.cn/simple
+pip install langchain  --index-url https://pypi.tuna.tsinghua.edu.cn/simple
+pip install langchain_experimental  --index-url https://pypi.tuna.tsinghua.edu.cn/simple
+pip install sentence-transformers  --index-url https://pypi.tuna.tsinghua.edu.cn/simple
+#pip install faiss-cpu  --index-url https://pypi.tuna.tsinghua.edu.cn/simple
+
+pip install ollama 
 
 
 
