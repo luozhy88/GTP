@@ -118,5 +118,11 @@ curl -X POST http://192.168.30.214:11434/api/generate -d '{
   "prompt":"Why is the sky blue?"
  }'
 
+#####################################lisakim0 RAG#################################
+A Retrieval-Augmented Generation (RAG) system for PDF document analysis using DeepSeek-R1 and Ollama. 
+https://gist.github.com/lisakim0/0204d7504d17cefceaf2d37261c1b7d5
+
+
+
 
 
