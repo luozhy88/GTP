@@ -138,5 +138,9 @@ pip install sentence-transformers  --index-url https://pypi.tuna.tsinghua.edu.cn
 
 pip install ollama 
 
+###########################Dify
+输入的模型名称必须是ollama中的模型名称
+https://mp.weixin.qq.com/s/n5GrGZ9hZmdhzt4avs1XSw
+
 
 
