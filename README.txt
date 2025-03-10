@@ -1,6 +1,8 @@
 # GTP
 
 ## Ollama
+nvidia-smi --query-gpu=utilization.gpu,memory.used --format=csv # GPU 使用情况
+
 ### install
 https://github.com/jmorganca/ollama/blob/main/docs/linux.md
 sudo nano /etc/systemd/system/ollama.service  
